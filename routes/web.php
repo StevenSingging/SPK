@@ -20,3 +20,4 @@ Route::get('/', function () {
 Route::get('/datakriteria','\App\Http\Controllers\KriteriaController@index')->name('kriteria');
 Route::get('/datapeserta','\App\Http\Controllers\PesertaController@index')->name('peserta');
 Route::get('/datapenilaian','\App\Http\Controllers\PenilaianController@index')->name('penilaian');
+Route::post('/simpandata','\App\Http\Controllers\PesertaController@simpandata')->name('simpandata');

@@ -30,7 +30,7 @@
               
                 <h3></h3>
                 
-                <p>Data Peserta</p>
+                <p>Data Calon Penerima Beasiswa</p>
               </div>
               <div class="icon">
               <i class="fas fa-envelope"></i>
@@ -39,21 +39,7 @@
             </div>
           </div>
           
-          <!-- ./col -->
-          <div class="col-sm-4 col-6">
-            <!-- small box -->
-            <div class="small-box bg-success">
-              <div class="inner">
-                <h3></h3>
-
-                <p>Data Kriteria</p>
-              </div>
-              <div class="icon">
-              <i class="fas fa-envelope"></i>
-              </div>
-              <a href="{{route('kriteria')}}" class="small-box-footer">Info Lebih Lanjut <i class="fas fa-arrow-circle-right"></i></a>
-            </div>
-          </div>
+          
           <!-- ./col -->
           <div class="col-sm-4 col-6">
             <!-- small box -->
