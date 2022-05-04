@@ -87,13 +87,13 @@
                   @if($p->rata_nilai == 4)
                   <td>> 7.50</td>
                   @endif
-                  @if($p->tahun_lulus == 1)
+                  @if($p->tahun_lulus == 2)
                   <td>2020</td>
                   @endif
-                  @if($p->tahun_lulus == 2)
+                  @if($p->tahun_lulus == 3)
                   <td>2021</td>
                   @endif
-                  @if($p->tahun_lulus == 3)
+                  @if($p->tahun_lulus == 4)
                   <td>2022</td>
                   @endif
                   @if($p->luas_tanah == 1)
