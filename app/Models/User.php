@@ -18,4 +18,12 @@ class User extends Model
     public function peserta(){
         return $this->hasOne(Penilaian::class,'user_id','id');
     }
+
+    public function user(){
+        return $this->hasOne(Bobot::class,'user_id','id');
+    }
+
+    public function calon(){
+        return $this->hasOne(Hasil::class,'user_id','id');
+    }
 }

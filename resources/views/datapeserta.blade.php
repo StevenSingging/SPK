@@ -81,32 +81,32 @@
                   @if($p->kendaraan == 4)
                   <td><=1</td>
                   @endif
-                  @if($p->rata_nilai == 1)
-                  <td>>=7.50</td>
-                  @endif
-                  @if($p->rata_nilai == 2)
+                  @if($p->rata_nilai == 3)
                   <td><=7.50</td>
                   @endif
+                  @if($p->rata_nilai == 4)
+                  <td>> 7.50</td>
+                  @endif
                   @if($p->tahun_lulus == 1)
-                  <td>2022</td>
+                  <td>2020</td>
                   @endif
                   @if($p->tahun_lulus == 2)
                   <td>2021</td>
                   @endif
                   @if($p->tahun_lulus == 3)
-                  <td>2020</td>
+                  <td>2022</td>
                   @endif
                   @if($p->luas_tanah == 1)
-                  <td>>=596 m2</td>
+                  <td><=72 m2</td>
                   @endif
                   @if($p->luas_tanah == 2)
-                  <td>>=285 m2</td>
+                  <td><=144 m2</td>
                   @endif
                   @if($p->luas_tanah == 3)
-                  <td>>=144 m2</td>
+                  <td><=285 m2</td>
                   @endif
                   @if($p->luas_tanah == 4)
-                  <td><=72 m2</td>
+                  <td>>285 m2</td>
                   @endif
                   @if($p->jml_tanggungan == 1)
                   <td><=2</td>
@@ -176,28 +176,28 @@
                         <div class="form-group">
                             <label>Rata-Rata Nilai Semester 5</label>
                             <select class="custom-select form-control-border" name="rata_nilai">
-                            <option selected="selected">Pilih Jumlah Kendaraan</option>
-                                <option value="1">>=7.50 </option>
-                                <option value="2"><=7.50 </option>
+                            <option selected="selected">Pilih Rata-Rata Nilai</option>
+                                <option value="3"><=7.50 </option>
+                                <option value="4">> 7.50 </option>
                             </select>
                         </div>
                         <div class="form-group">
                             <label>Tahun Lulus</label>
                             <select class="custom-select form-control-border" name="tahun_lulus">
                             <option selected="selected">Pilih Tahun Lulus</option>
-                                <option value="1">>2022 </option>
-                                <option value="2">2021 </option>
-                                <option value="3">2020 </option>
+                                <option value="2">2020 </option>
+                                <option value="3">2021 </option>
+                                <option value="4">2022 </option>
                             </select>
                         </div>
                         <div class="form-group">
                             <label>Luas Tanah</label>
                             <select class="custom-select form-control-border" name="luas_tanah">
                             <option selected="selected">Pilih Luas Tanah</option>
-                                <option value="1">>=596 m2 </option>
-                                <option value="2">>=285 m2 </option>
-                                <option value="3">>=144 m2 </option>
-                                <option value="4"><=72 m2 </option>
+                                <option value="1"><=72 m2</option>
+                                <option value="2"><=144 m2 </option>
+                                <option value="3"><=285 m2</option>
+                                <option value="4">>285 m2</option>
                             </select>
                         </div>
                         <div class="form-group">

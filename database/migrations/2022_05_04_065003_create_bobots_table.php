@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreatePenilaiansTable extends Migration
+class CreateBobotsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,17 +13,17 @@ class CreatePenilaiansTable extends Migration
      */
     public function up()
     {
-        Schema::create('penilaians', function (Blueprint $table) {
+        Schema::create('bobots', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('user_id');
-            $table->integer('A1');
-            $table->integer('A2');
-            $table->integer('A3');
-            $table->integer('A4');
-            $table->integer('A5');
-            $table->integer('A6');
-            $table->integer('A7');
             $table->foreign('user_id')->references('id')->on('users')->nullable();
+            $table->float('A1', 8, 2);
+            $table->float('A2', 8, 2);
+            $table->float('A3', 8, 2);
+            $table->float('A4', 8, 2);
+            $table->float('A5', 8, 2);
+            $table->float('A6', 8, 2);
+            $table->float('A7', 8, 2);
             $table->timestamps();
         });
     }
@@ -35,6 +35,6 @@ class CreatePenilaiansTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('penilaians');
+        Schema::dropIfExists('bobots');
     }
 }
